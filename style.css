@@ -30,6 +30,29 @@ h2 {
     font-weight: normal;
 }
 
+p {
+    color: white;
+    text-align: center;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+h4 {
+    color: white;
+    text-align: center;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
 
 button {
     font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
@@ -39,7 +62,26 @@ button {
     font-weight: 1000;
     line-height: 26.4px
 }
-
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: #FFDAB9;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
 
 </style>
 </head>
