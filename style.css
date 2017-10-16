@@ -1,62 +1,199 @@
 <!DOCTYPE html>
-
+<html>
+<head>
 <style>
 body {
     background-color: lightblue;
+}
+
+ body {
+/*    background-image: url("back.jpg");*/
+    background-color: #6FA8B0;
+    background-size: 1300px 750px;
+}
+
+title{
+    color: white;
+    position: absolute; 
+    text-align: center;
+    font-family: "Brush Script MT", cursive;
+    top:150px; 
+    left:500px; 
+    width:300px; 
+    height:30px;
 }
 
 h1 {
     color: white;
     text-align: center;
     font-family: "Brush Script MT", cursive;
-    font-size: 150px;
+    font-size: 85px;
+    font-style: unset;
+    font-weight: 100;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    font-family: "Brush Script MT", cursive;
+    font-size: 40px;
     font-style: normal;
     font-weight: normal;
 }
 
-
-
-
-body{
-  height:auto;
-  margin:0;
+p {
+    color: white;
+    text-align: center;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-style: normal;
+    font-weight: normal;
 }
 
-#ocean{
-  position:absolute;
-  width:100%;
-  min-height:100%;
-  background-image: -webkit-gradient(
-  linear,
-  left bottom,
-  left top,
-  color-stop(0, rgb(0,50,150)),
-  color-stop(0.50, rgb(0,150,255))
-  );
+h3 {
+    color: white;
+    text-align: center;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-style: normal;
+    font-weight: normal;
 }
 
-.wave{
-  background:#a8e3ff;
-  display:inline-block;
-  height:60%;
-  width:10px;
-  position:absolute;
-  -webkit-animation-name:             dostuff; 
-  -webkit-animation-duration:         3s; 
-  -webkit-animation-iteration-count:  infinite;
-  -webkit-transition-timing-function: ease-in-out;
+h4 {
+    color: white;
+    text-align: center;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+button {
+    font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
+    font-size: 40px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 1000;
+    line-height: 26.4px
+}
+a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: #FFDAB9;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption { 
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
 }
 
 
-@-webkit-keyframes dostuff{
-  0%{
-    height:60%;
-  }
-  50%{ 
-    height:40%;
-  }
-  100%{ 
-    height:60%;
-  }
-}
+
+
+
+
+
+
+</style>
+
+
+
+</head>
+<body>
+
+</body>
+</html>
 </style>
