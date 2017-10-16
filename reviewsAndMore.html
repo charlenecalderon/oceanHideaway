@@ -5,9 +5,8 @@
 <body background = "main.jpg">
 
 	<head>
-    <title>Reviews</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-
+  		<title>Map</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
 		<style>
 .button {
     background-color: #4CAF50; /* Green */
@@ -87,6 +86,16 @@
     background-color: #6FA8B0;
     color: white;
 }
+.button7 {
+    background-color: transparent; 
+    color: black;
+    border: 2px solid #6FA8B0;
+}
+
+.button7:hover {
+    background-color: #6FA8B0;
+    color: white;
+}
 </style>
 
 <a href = "home.html"><button class="button button1">HOME</button></a>
@@ -97,18 +106,40 @@
 <a href = "map.html"><button class="button button3">MAP</button></a>
 <a href = "reviewsAndMore.html"><button class="button button5">REVIEWS & MORE</button></a>
 <a href = "bookNow.html"><button class="button button5">BOOK NOW</button></a>
-	</head>
+        
+    </head>
+
+	<style>
+       #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+  </head>
+  <body>
+<br>
+<br>
+<br>
+<br>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHuwGRmlGj1LDAKKgQfz3S4TQbLQPM5kc&callback=initMap">
+    </script>
 
 	
-
-
-	<body>
-
-
-
-
-
-		
 
 
 	</body>
