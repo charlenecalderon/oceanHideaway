@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: transparent; 
+    color: black;
+    border: 2px solid #6FA8B0;
+}
+
+.button1:hover {
+    background-color: #6FA8B0;
+    color: white;
+}
+
+.button2 {
+    background-color: transparent; 
+    color: black; 
+    border: 2px solid #6FA8B0;
+}
+
+.button2:hover {
+    background-color: #6FA8B0;
+    color: white;
+}
+
+.button3 {
+    background-color: transparent; 
+    color: black; 
+    border: 2px solid #6FA8B0;
+}
+
+.button3:hover {
+    background-color: #6FA8B0;
+    color: white;
+}
+
+.button4 {
+    background-color: transparent;
+    color: black;
+    border: 2px solid #6FA8B0;
+}
+.button4:hover {
+    background-color: #6FA8B0;
+    color: white;
+}
+
+.button5 {
+    background-color: transparent;
+    color: black;
+    border: 2px solid #6FA8B0;
+}
+
+.button5:hover {
+    background-color: #6FA8B0;
+    color: white;
+}
+.button6 {
+    background-color: transparent; 
+    color: black;
+    border: 2px solid #6FA8B0;
+}
+
+.button6:hover {
+    background-color: #6FA8B0;
+    color: white;
+}
+.button7 {
+    background-color: transparent; 
+    color: black;
+    border: 2px solid #6FA8B0;
+}
+
+.button7:hover {
+    background-color: #6FA8B0;
+    color: white;
+}
+
+body {
+    background-color: lightblue;
+}
+
+ 
+
+
+
+
+</style>
+<head>
+
+
+    <title>Photos</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+<a href = "home.html"><button class="button button1">HOME</button></a>
+<a href = "description.html"><button class="button button2">DESCRIPTION</button></a>
+<a href = "photos.html"><button class="button button4">PHOTOS</button></a>
+<a href = "areaAttractions.html"><button class="button button1">AREA ATTRACTIONS</button></a>
+<a href = "rates.html"><button class="button button5">RATES</button></a>
+<a href = "map.html"><button class="button button3">MAP</button></a>
+<a href = "reviewsAndMore.html"><button class="button button5">REVIEWS & MORE</button></a>
+<a href = "bookNow.html"><button class="button button5">BOOK NOW</button></a>
+
+        
+    </head>
+    
+    	
+    	<head><link rel="stylesheet" type="text/css" media="screen" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css" />
+<style type="text/css">
+    a.fancybox img {
+        border: none;
+        box-shadow: 0 1px 7px rgba(0,0,0,0.6);
+        -o-transform: scale(1,1); -ms-transform: scale(1,1); -moz-transform: scale(1,1); -webkit-transform: scale(1,1); transform: scale(1,1); -o-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out;
+    } 
+    a.fancybox:hover img {
+        position: relative; z-index: 999; -o-transform: scale(1.03,1.03); -ms-transform: scale(1.03,1.03); -moz-transform: scale(1.03,1.03); -webkit-transform: scale(1.03,1.03); transform: scale(1.03,1.03);
+    }
+</style></head>
+<body><script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js"></script>
+<script type="text/javascript">
+    $(function($){
+        var addToAll = false;
+        var gallery = true;
+        var titlePosition = 'inside';
+        $(addToAll ? 'img' : 'img.fancybox').each(function(){
+            var $this = $(this);
+            var title = $this.attr('title');
+            var src = $this.attr('data-big') || $this.attr('src');
+            var a = $('<a href="#" class="fancybox"></a>').attr('href', src).attr('title', title);
+            $this.wrap(a);
+        });
+        if (gallery)
+            $('a.fancybox').attr('rel', 'fancyboxgallery');
+        $('a.fancybox').fancybox({
+            titlePosition: titlePosition
+        });
+    });
+    $.noConflict();
+</script>
+<style>
+div {
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+</style>
+<br>
+<br>
+</body>
+    <center>
+    	
+	<img class= "fancybox" src="hot_tub.jpg" alt="Hot Tub" style="width:350px;height:300px;"title="Relax at the end of the day in the hot tub overlooking the ocean!">
+	<img class= "fancybox"src="bath.jpg" alt="Bath" style="width: 350px;height:300px;"title="One full bath and one half bath.">
+	<img class= "fancybox"src="aerial.jpg" alt="Aerial" style="width: 350px;height:300px;"title="Aerial view of Ocean Hideaway. Private and secluded!"> 
+	<img class= "fancybox"src="breakfast_bar.jpg" alt="Breakfast Bar" style="width: 350px;height:300px;"title="Breakfast bar adjacent to the kitchen">
+	<img class= "fancybox"src="couch.jpg" alt="Couch" style="width: 350px;height:300px;"title="Upstairs loft room with TV and extensive video collection">
+	<img class= "fancybox"src="cove.jpg" alt="Cove" style="width: 350px;height:300px;"title="Ocean Hideaway's meadow and cove">
+	<img class= "fancybox"src="deck.jpg" alt="Deck" style="width: 350px;height:300px;" title="Outdoor patio with BBQ and eating area">
+	<img class= "fancybox"src="dining.jpg" alt="Dining" style="width: 350px;height:300px;"title="Dining room with ocean view">
+	<img class= "fancybox"src="kitchen.jpg" alt="Kitchen" style="width: 350px;height:300px;"title="Beautiful remodeled kitchen with many amenities!">
+	<img class= "fancybox"src="moon.jpg" alt="Moon" style="width: 350px;height:300px;"title="Magical night moon over the ocean">
+	<img class= "fancybox"src="ocean_view.jpg" alt="Ocean View" style="width: 350px;height:300px;"title="Ocean view from master bedroom">
+	<img class= "fancybox"src="season.jpg" alt="Season" style="width: 350px;height:300px;"title="Every season brings something to delight the senses!">
+	<img class= "fancybox"src="private_gated.jpg" alt="Private Gate" style="width: 350px;height:300px;"title="View of house from private gated road">
+	<img class= "fancybox"src="stove.jpg" alt="Stove" style="width: 350px;height:300px;"title="The wood burning stove is warming and romantic">
+	<img class= "fancybox"src="sunset.jpg" alt="Sunset" style="width: 350px;height:300px;"title=Sunset at Ocean Hideaway">
+	<img class= "fancybox"src="surf.jpg" alt="Surf" style="width: 350px;height:300px;"title="Nearby surf and dramatic rock formations">
+	<img class= "fancybox"src="washroom.jpg" alt="Washroom" style="width: 350px;height:300px;"title="Laundry facilities and other comforts of home">
+	<img class= "fancybox"src="woods.jpg" alt="Woods" style="width: 350px;height:300px;"title="Ocean Hideaway is secluded with woods on three sides">
+	
+	</center>
+<br>
+<br>
+
+	</body>
+
+
+</html>
